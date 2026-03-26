@@ -1,0 +1,103 @@
+﻿openapi: 3.0.3
+info:
+  title: Food Ordering API
+  version: 1.1.0
+  description: API documentation for Online Food Ordering System backend.
+servers:
+  - url: http://localhost:5000
+paths:
+  /api/v1/health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service health info
+  /api/v1/auth/register:
+    post:
+      summary: Register a user or partner
+      responses:
+        '201':
+          description: Registered successfully
+  /api/v1/auth/register-customer:
+    post:
+      summary: Register a customer (role forced to user)
+      responses:
+        '201':
+          description: Customer registered successfully
+  /api/v1/auth/login:
+    post:
+      summary: Login
+      responses:
+        '200':
+          description: Login successful
+  /api/v1/restaurants:
+    get:
+      summary: List approved restaurants with discovery filters and pagination
+      parameters:
+        - in: query
+          name: q
+          schema:
+            type: string
+        - in: query
+          name: cuisine
+          schema:
+            type: string
+        - in: query
+          name: sort
+          schema:
+            type: string
+            enum: [recommended, newest, rating_desc, eta_asc, delivery_fee_asc, min_order_asc, name_asc]
+        - in: query
+          name: featured
+          schema:
+            type: boolean
+        - in: query
+          name: page
+          schema:
+            type: integer
+            minimum: 1
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+      responses:
+        '200':
+          description: Restaurant list with meta
+  /api/v1/restaurants/{restaurantId}:
+    get:
+      summary: Get single restaurant profile for storefront
+      parameters:
+        - in: path
+          name: restaurantId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Restaurant details
+  /api/v1/orders:
+    get:
+      summary: List orders for authenticated user role
+      responses:
+        '200':
+          description: Orders list
+    post:
+      summary: Create an order
+      responses:
+        '201':
+          description: Order created
+  /api/v1/orders/{orderId}/status:
+    patch:
+      summary: Update order status
+      parameters:
+        - in: path
+          name: orderId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Status updated
+components: {}

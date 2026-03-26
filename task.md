@@ -1,0 +1,33 @@
+﻿# Online Food Ordering System - Task Breakdown
+
+- [x] **Phase 1: Project Setup & Architecture**
+  - [x] Initialize Backend (Node.js/Express)
+  - [x] Initialize Frontend (React/Vite/Tailwind)
+  - [x] Setup Database Schema (Sequelize models)
+  - [x] Configure Environment Variables
+- [x] **Phase 2: Backend Development - Core Modules**
+  - [x] Authentication System (JWT, Users, Roles)
+  - [x] User Module (Profile, Addresses)
+  - [x] Restaurant Module (Registration, Menu, Profile)
+  - [x] Rider Module (Registration, Profile, Location)
+  - [x] Admin Module (Dashboard data, Approvals)
+- [x] **Phase 3: Backend Development - Order Logic & Advanced Features**
+  - [x] Order Management System (Checkout, Status Lifecycle)
+  - [x] Real-time Notifications (WebSockets)
+  - [x] Rating & Review System
+  - [x] Payment Integration Mock (Cash on Delivery, Stripe Mock)
+- [x] **Phase 4: Frontend Development - Shared & User Portal**
+  - [x] Setup Routing and Authentication context
+  - [x] Shared UI Components Layout (Navbar, Footer, Cards)
+  - [x] User Portal: Browse Restaurants & Menu
+  - [x] User Portal: Cart & Checkout Flow
+  - [x] User Portal: Order Tracking & History
+- [x] **Phase 5: Frontend Development - Role Dashboards**
+  - [x] Restaurant Dashboard (Manage menu, Handle orders)
+  - [x] Rider Dashboard (View deliveries, Update status)
+  - [x] Admin Dashboard (Manage users, approvals, metrics)
+- [~] **Phase 6: Verification & Polish**
+  - [x] Test End-to-End Core API Flow (baseline integration test)
+  - [x] Responsive Layout Baseline
+  - [x] API Documentation Scaffold
+  - [ ] Full production hardening and expanded test matrix

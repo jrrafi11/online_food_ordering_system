@@ -1,0 +1,9 @@
+﻿node_modules
+.env
+.env.*
+*.log
+coverage
+dist
+build
+backend/uploads
+backend/tmp

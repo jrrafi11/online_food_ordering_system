@@ -1,0 +1,32 @@
+# Online Food Ordering System - Task Breakdown
+
+- [ ] **Phase 1: Project Setup & Architecture**
+  - [ ] Initialize Backend (Node.js/Express/TypeScript)
+  - [ ] Initialize Frontend (React/Vite/Tailwind)
+  - [ ] Setup Database Schema (MySQL)
+  - [ ] Configure Environment Variables
+- [ ] **Phase 2: Backend Development - Core Modules**
+  - [ ] Authentication System (JWT, Users, Roles)
+  - [ ] User Module (Profile, Addresses)
+  - [ ] Restaurant Module (Registration, Menu, Profile)
+  - [ ] Rider Module (Registration, Profile, Location)
+  - [ ] Admin Module (Dashboard data, Approvals)
+- [ ] **Phase 3: Backend Development - Order Logic & Advanced Features**
+  - [ ] Order Management System (Cart, Checkout, Status Lifecycle)
+  - [ ] Real-time Notifications (WebSockets)
+  - [ ] Rating & Review System
+  - [ ] Payment Integration Mock (Cash on Delivery, Stripe Mock)
+- [ ] **Phase 4: Frontend Development - Shared & User Portal**
+  - [ ] Setup Routing and Authentication context
+  - [ ] Shared UI Components Layout (Navbar, Footer, Modals)
+  - [ ] User Portal: Browse Restaurants & Menu
+  - [ ] User Portal: Cart & Checkout Flow
+  - [ ] User Portal: Order Tracking & History
+- [ ] **Phase 5: Frontend Development - Role Dashboards**
+  - [ ] Restaurant Dashboard (Manage menu, Handle orders)
+  - [ ] Rider Dashboard (View deliveries, Update status)
+  - [ ] Admin Dashboard (Manage users, restaurants, view analytics)
+- [ ] **Phase 6: Verification & Polish**
+  - [ ] Test End-to-End User Flow
+  - [ ] Responsive Design Polish
+  - [ ] API Documentation
